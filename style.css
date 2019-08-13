@@ -1,0 +1,36 @@
+﻿h1 {
+    font-size: 2vw;
+    text-align: center;
+}
+div
+{
+    text-align: center;
+}
+form
+{
+    font-size: larger;
+}
+label{
+    font-size: large;
+}
+#btn-group
+{
+    width: 100%;
+}
+button {
+    width: 80px;
+    padding: 8px;
+    border-color: #DDD;
+    box-shadow: 0 4px #999;
+}
+button:hover
+{
+    opacity: 0.9;
+}
+button:active
+{
+    color: dodgerblue;
+    box-shadow: 0 4px #666;
+    color: dodgerblue;
+    opacity: 0.6;
+}

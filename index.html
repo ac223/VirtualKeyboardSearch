@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Virtual Keyboard Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>Virtual Keyboard Search</h1>
+    <div>
+        <form>
+            <label class="radio-inline"><input type="radio" name="optradio" checked>&nbsp;Web&emsp;</label>
+            <label class="radio-inline"><input type="radio" name="optradio">&nbsp;Images&emsp;</label>
+            <label class="radio-inline"><input type="radio" name="optradio">&nbsp;Videos&emsp;</label>
+        </form>
+        <form class="form-inline text-center">
+            <div class="col-md-3"></div>
+            <input type="text" class="form-control col-md-6" id="text">
+        </form>
+        <br>
+    </div>
+    <div>
+        <button type="button" class="btn" id="Google_btn" style="background-color: #f31; font-weight: bold; box-shadow: none; width: 140px;">Google</button>
+        <button type="button" class="btn" id="Bing_btn" style="background-color: #0c6; font-weight: bold; box-shadow: none; width: 140px;">Bing</button>
+        <button type="button" class="btn" id="DuckDuckGo_btn" style="background-color: #f71; font-weight: bold; box-shadow: none; width: 140px;">DuckDuckGo</button>
+        <button type="button" class="btn" id="Mail_btn" style="background-color: #46f; font-weight: bold; box-shadow: none; width: 140px;">Mail.ru</button>
+        <button type="button" class="btn" id="Copy_btn" style="background-color: #bbb; font-weight: bold; box-shadow: none; width: 140px;">Copy</button>
+        <br>
+        <br>
+    </div>
+    <div id="ENG_KB">
+        <div class="btn-group">
+            <button id="Q_btn">Q</button>
+            <button id="W_btn">W</button>
+            <button id="E_btn">E</button>
+            <button id="R_btn">R</button>
+            <button id="T_btn">T</button>
+            <button id="Y_btn">Y</button>
+            <button id="U_btn">U</button>
+            <button id="I_btn">I</button>
+            <button id="O_btn">O</button>
+        </div>
+        <br>
+        <div class="btn-group">
+            <button id="A_btn">A</button>
+            <button id="S_btn">S</button>
+            <button id="D_btn">D</button>
+            <button id="F_btn">F</button>
+            <button id="G_btn">G</button>
+            <button id="H_btn">H</button>
+            <button id="J_btn">J</button>
+            <button id="K_btn">K</button>
+            <button id="L_btn">L</button>
+        </div>
+        <br>
+        <div class="btn-group">
+            <button id="Z_btn">Z</button>
+            <button id="X_btn">X</button>
+            <button id="C_btn">C</button>
+            <button id="V_btn">V</button>
+            <button id="B_btn">B</button>
+            <button id="N_btn">N</button>
+            <button id="M_btn">M</button>
+            <button id="P_btn">P</button>
+        </div>
+        <br>
+        <div class="btn-group">
+            <button id="Shift_btn" style="width: 160px;">Shift</button>
+            <button id="Space_btn" style="width: 320px;">&emsp;</button>
+            <button id="Caps_btn" style="width: 160px;">Caps</button>
+        </div>
+        <br>
+    </div>
+    <div id="RUS_KB" style="display: none;">
+        <div class="btn-group">
+            <button id="Й_btn">Й</button>
+            <button id="Ц_btn">Ц</button>
+            <button id="У_btn">У</button>
+            <button id="К_btn">К</button>
+        </div>
+        <div class="btn-group">
+            <button id="Е_btn">Е</button>
+            <button id="Н_btn">Н</button>
+            <button id="Г_btn">Г</button>
+        </div>
+        <div class="btn-group">
+            <button id="Ш_btn">Ш</button>
+            <button id="Щ_btn">Щ</button>
+            <button id="З_btn">З</button>
+            <button id="Х_btn">Х</button>
+        </div>
+        <br>
+        <div class="btn-group">
+            <button id="Ф_btn">Ф</button>
+            <button id="Ы_btn">Ы</button>
+            <button id="В_btn">В</button>
+            <button id="А_btn">А</button>
+        </div>
+        <div class="btn-group">
+            <button id="П_btn">П</button>
+            <button id="Р_btn">Р</button>
+            <button id="О_btn">О</button>
+        </div>
+        <div class="btn-group">
+            <button id="Л_btn">Л</button>
+            <button id="Д_btn">Д</button>
+            <button id="Ж_btn">Ж</button>
+            <button id="Э_btn">Э</button>
+        </div>
+        <br>
+        <div class="btn-group">
+            <button id="Я_btn">Я</button>
+            <button id="Ч_btn">Ч</button>
+            <button id="С_btn">С</button>
+            <button id="М_btn">М</button>
+        </div>
+        <div class="btn-group">
+            <button id="И_btn">И</button>
+            <button id="Т_btn">Т</button>
+            <button id="Ь_btn">Ь</button>
+        </div>
+        <div class="btn-group">
+            <button id="Б_btn">Б</button>
+            <button id="Ю_btn">Ю</button>
+            <button id="Ё_btn">Ё</button>
+            <button id="Ъ_btn">Ъ</button>
+        </div>
+        <br>
+        <div class="btn-group">
+            <button id="Shift2_btn" style="width: 240px;">Shift</button>
+            <button id="Space2_btn" style="width: 410px;">&nbsp;</button>
+            <button id="Caps2_btn" style="width: 240px;">Caps</button>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="custom-control custom-switch">
+        <label>English&emsp;&emsp;&ensp;</label>
+        <input type="checkbox" class="custom-control-input" id="lang-switch">
+        <label class="custom-control-label" for="lang-switch">&nbsp;Русский&emsp;&ensp;</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Virtual Keyboard Search webpage uses a browser-based virtual keyboard with either English or Russian language to send requests for different content to various search engines.
