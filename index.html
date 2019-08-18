@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<!--
+Webpage: Virtual Keyboard Search
+Author: Alexander Cherkashin
+-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,16 +12,371 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var capitalization = false;
+
+            //initialize language switch to English
+            $("#lang-switch").prop("checked", false);
+            //reset the text box
+            document.getElementById('text').value = "";
+
+            //shows English keyboard when language switch inactive and Russian keyboard when active
+            $("#lang-switch").click(function () {
+                if (this.checked) {
+                    $("#ENG_KB").hide();
+                    $("#RUS_KB").show();
+                }
+                else {
+                    $("#RUS_KB").hide();
+                    $("#ENG_KB").show();
+                }
+            });
+
+            /*-- English Keyboard Key Events --*/
+            $("#A_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#B_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#C_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#D_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#E_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#F_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#G_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#H_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#I_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#J_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#K_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#L_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#M_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#N_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#O_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#P_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Q_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#R_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#S_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#T_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#U_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#V_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#W_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#X_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Y_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Z_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+
+            /*-- Russian Keyboard Key Events --*/
+            $("#А_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Б_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#В_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Г_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Д_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Е_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ё_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ж_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#З_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#И_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Й_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#К_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Л_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#М_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Н_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#О_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#П_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Р_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#С_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Т_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#У_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ф_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Х_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ц_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ч_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ш_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Щ_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ъ_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ы_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ь_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Э_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Ю_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+            $("#Я_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+            });
+
+            /*-- Misc Keyboard Key Events --*/
+            $("#Caps_btn").click(function () {
+                if (capitalization) {
+                    capitalization = false;
+                    Uncapitalize();
+                }
+                else {
+                    capitalization = true;
+                    Capitalize();
+                }
+            });
+            $("#Space_btn").click(function () {
+                document.getElementById('text').value += " ";
+            });
+            $("#Delete_btn").click(function () {
+                var string = document.getElementById('text').value.slice(0,-1);
+                document.getElementById('text').value = string;
+            });
+        })
+
+        //// Capitalize the keyboard input characters ////
+        function Capitalize() {
+            //capitilize English keys
+            document.getElementById('A_btn').innerHTML = "A";
+            document.getElementById('B_btn').innerHTML = "B";
+            document.getElementById('C_btn').innerHTML = "C";
+            document.getElementById('D_btn').innerHTML = "D";
+            document.getElementById('E_btn').innerHTML = "E";
+            document.getElementById('F_btn').innerHTML = "F";
+            document.getElementById('G_btn').innerHTML = "G";
+            document.getElementById('H_btn').innerHTML = "H";
+            document.getElementById('I_btn').innerHTML = "I";
+            document.getElementById('J_btn').innerHTML = "J";
+            document.getElementById('K_btn').innerHTML = "K";
+            document.getElementById('L_btn').innerHTML = "L";
+            document.getElementById('M_btn').innerHTML = "M";
+            document.getElementById('N_btn').innerHTML = "N";
+            document.getElementById('O_btn').innerHTML = "O";
+            document.getElementById('P_btn').innerHTML = "P";
+            document.getElementById('Q_btn').innerHTML = "Q";
+            document.getElementById('R_btn').innerHTML = "R";
+            document.getElementById('S_btn').innerHTML = "S";
+            document.getElementById('T_btn').innerHTML = "T";
+            document.getElementById('U_btn').innerHTML = "U";
+            document.getElementById('V_btn').innerHTML = "V";
+            document.getElementById('W_btn').innerHTML = "W";
+            document.getElementById('X_btn').innerHTML = "X";
+            document.getElementById('Y_btn').innerHTML = "Y";
+            document.getElementById('Z_btn').innerHTML = "Z";
+            //capitalize Russian keys
+            document.getElementById('А_btn').innerHTML = "А";
+            document.getElementById('Б_btn').innerHTML = "Б";
+            document.getElementById('В_btn').innerHTML = "В";
+            document.getElementById('Г_btn').innerHTML = "Г";
+            document.getElementById('Д_btn').innerHTML = "Д";
+            document.getElementById('Е_btn').innerHTML = "Е";
+            document.getElementById('Ё_btn').innerHTML = "Ё";
+            document.getElementById('Ж_btn').innerHTML = "Ж";
+            document.getElementById('З_btn').innerHTML = "З";
+            document.getElementById('И_btn').innerHTML = "И";
+            document.getElementById('Й_btn').innerHTML = "Й";
+            document.getElementById('К_btn').innerHTML = "К";
+            document.getElementById('Л_btn').innerHTML = "Л";
+            document.getElementById('М_btn').innerHTML = "М";
+            document.getElementById('Н_btn').innerHTML = "Н";
+            document.getElementById('О_btn').innerHTML = "О";
+            document.getElementById('П_btn').innerHTML = "П";
+            document.getElementById('Р_btn').innerHTML = "Р";
+            document.getElementById('С_btn').innerHTML = "С";
+            document.getElementById('Т_btn').innerHTML = "Т";
+            document.getElementById('У_btn').innerHTML = "У";
+            document.getElementById('Ф_btn').innerHTML = "Ф";
+            document.getElementById('Х_btn').innerHTML = "Х";
+            document.getElementById('Ц_btn').innerHTML = "Ц";
+            document.getElementById('Ч_btn').innerHTML = "Ч";
+            document.getElementById('Ш_btn').innerHTML = "Ш";
+            document.getElementById('Щ_btn').innerHTML = "Щ";
+            document.getElementById('Ъ_btn').innerHTML = "Ъ";
+            document.getElementById('Ы_btn').innerHTML = "Ы";
+            document.getElementById('Ь_btn').innerHTML = "Ь";
+            document.getElementById('Э_btn').innerHTML = "Э";
+            document.getElementById('Ю_btn').innerHTML = "Ю";
+            document.getElementById('Я_btn').innerHTML = "Я";
+            //uncapitalize caps lock key
+            document.getElementById('Caps_btn').innerHTML = "⇩";
+        }
+
+        //// Uncapitalize the keyboard input characters ////
+        function Uncapitalize() {
+            //uncapitalize English keys
+            document.getElementById('A_btn').innerHTML = "a";
+            document.getElementById('B_btn').innerHTML = "b";
+            document.getElementById('C_btn').innerHTML = "c";
+            document.getElementById('D_btn').innerHTML = "d";
+            document.getElementById('E_btn').innerHTML = "e";
+            document.getElementById('F_btn').innerHTML = "f";
+            document.getElementById('G_btn').innerHTML = "g";
+            document.getElementById('H_btn').innerHTML = "h";
+            document.getElementById('I_btn').innerHTML = "i";
+            document.getElementById('J_btn').innerHTML = "j";
+            document.getElementById('K_btn').innerHTML = "k";
+            document.getElementById('L_btn').innerHTML = "l";
+            document.getElementById('M_btn').innerHTML = "m";
+            document.getElementById('N_btn').innerHTML = "n";
+            document.getElementById('O_btn').innerHTML = "o";
+            document.getElementById('P_btn').innerHTML = "p";
+            document.getElementById('Q_btn').innerHTML = "q";
+            document.getElementById('R_btn').innerHTML = "r";
+            document.getElementById('S_btn').innerHTML = "s";
+            document.getElementById('T_btn').innerHTML = "t";
+            document.getElementById('U_btn').innerHTML = "u";
+            document.getElementById('V_btn').innerHTML = "v";
+            document.getElementById('W_btn').innerHTML = "w";
+            document.getElementById('X_btn').innerHTML = "x";
+            document.getElementById('Y_btn').innerHTML = "y";
+            document.getElementById('Z_btn').innerHTML = "z";
+            //uncapitalize Russian keys
+            document.getElementById('А_btn').innerHTML = "а";
+            document.getElementById('Б_btn').innerHTML = "б";
+            document.getElementById('В_btn').innerHTML = "в";
+            document.getElementById('Г_btn').innerHTML = "г";
+            document.getElementById('Д_btn').innerHTML = "д";
+            document.getElementById('Е_btn').innerHTML = "е";
+            document.getElementById('Ё_btn').innerHTML = "ё";
+            document.getElementById('Ж_btn').innerHTML = "ж";
+            document.getElementById('З_btn').innerHTML = "з";
+            document.getElementById('И_btn').innerHTML = "и";
+            document.getElementById('Й_btn').innerHTML = "й";
+            document.getElementById('К_btn').innerHTML = "к";
+            document.getElementById('Л_btn').innerHTML = "л";
+            document.getElementById('М_btn').innerHTML = "м";
+            document.getElementById('Н_btn').innerHTML = "н";
+            document.getElementById('О_btn').innerHTML = "о";
+            document.getElementById('П_btn').innerHTML = "п";
+            document.getElementById('Р_btn').innerHTML = "р";
+            document.getElementById('С_btn').innerHTML = "с";
+            document.getElementById('Т_btn').innerHTML = "т";
+            document.getElementById('У_btn').innerHTML = "у";
+            document.getElementById('Ф_btn').innerHTML = "ф";
+            document.getElementById('Х_btn').innerHTML = "х";
+            document.getElementById('Ц_btn').innerHTML = "ц";
+            document.getElementById('Ч_btn').innerHTML = "ч";
+            document.getElementById('Ш_btn').innerHTML = "ш";
+            document.getElementById('Щ_btn').innerHTML = "щ";
+            document.getElementById('Ъ_btn').innerHTML = "ъ";
+            document.getElementById('Ы_btn').innerHTML = "ы";
+            document.getElementById('Ь_btn').innerHTML = "ь";
+            document.getElementById('Э_btn').innerHTML = "э";
+            document.getElementById('Ю_btn').innerHTML = "ю";
+            document.getElementById('Я_btn').innerHTML = "я";
+            //capitalize caps lock key
+            document.getElementById('Caps_btn').innerHTML = "⇧";
+        }
+    </script>
 </head>
 <body>
     <h1>Virtual Keyboard Search</h1>
     <div>
         <form>
-            <label class="radio-inline"><input type="radio" name="optradio" checked>&nbsp;Web&emsp;</label>
-            <label class="radio-inline"><input type="radio" name="optradio">&nbsp;Images&emsp;</label>
-            <label class="radio-inline"><input type="radio" name="optradio">&nbsp;Videos&emsp;</label>
+            <label class="radio-inline"><input type="radio" name="optradio" id="check-web" checked>&nbsp;Web&emsp;</label>
+            <label class="radio-inline"><input type="radio" name="optradio" id="check-images">&nbsp;Images&emsp;</label>
+            <label class="radio-inline"><input type="radio" name="optradio" id="check-videos">&nbsp;Videos&emsp;</label>
         </form>
         <form class="form-inline text-center">
             <div class="col-md-3"></div>
@@ -36,106 +395,90 @@
     </div>
     <div id="ENG_KB">
         <div class="btn-group">
-            <button id="Q_btn">Q</button>
-            <button id="W_btn">W</button>
-            <button id="E_btn">E</button>
-            <button id="R_btn">R</button>
-            <button id="T_btn">T</button>
-            <button id="Y_btn">Y</button>
-            <button id="U_btn">U</button>
-            <button id="I_btn">I</button>
-            <button id="O_btn">O</button>
+            <button id="Q_btn">q</button>
+            <button id="W_btn">w</button>
+            <button id="E_btn">e</button>
+            <button id="R_btn">r</button>
+            <button id="T_btn">t</button>
+            <button id="Y_btn">y</button>
+            <button id="U_btn">u</button>
+            <button id="I_btn">i</button>
+            <button id="O_btn">o</button>
         </div>
         <br>
         <div class="btn-group">
-            <button id="A_btn">A</button>
-            <button id="S_btn">S</button>
-            <button id="D_btn">D</button>
-            <button id="F_btn">F</button>
-            <button id="G_btn">G</button>
-            <button id="H_btn">H</button>
-            <button id="J_btn">J</button>
-            <button id="K_btn">K</button>
-            <button id="L_btn">L</button>
+            <button id="A_btn">a</button>
+            <button id="S_btn">s</button>
+            <button id="D_btn">d</button>
+            <button id="F_btn">f</button>
+            <button id="G_btn">g</button>
+            <button id="H_btn">h</button>
+            <button id="J_btn">j</button>
+            <button id="K_btn">k</button>
+            <button id="L_btn">l</button>
         </div>
         <br>
         <div class="btn-group">
-            <button id="Z_btn">Z</button>
-            <button id="X_btn">X</button>
-            <button id="C_btn">C</button>
-            <button id="V_btn">V</button>
-            <button id="B_btn">B</button>
-            <button id="N_btn">N</button>
-            <button id="M_btn">M</button>
-            <button id="P_btn">P</button>
-        </div>
-        <br>
-        <div class="btn-group">
-            <button id="Shift_btn" style="width: 160px;">Shift</button>
-            <button id="Space_btn" style="width: 320px;">&emsp;</button>
-            <button id="Caps_btn" style="width: 160px;">Caps</button>
+            <button id="Z_btn">z</button>
+            <button id="X_btn">x</button>
+            <button id="C_btn">c</button>
+            <button id="V_btn">v</button>
+            <button id="B_btn">b</button>
+            <button id="N_btn">n</button>
+            <button id="M_btn">m</button>
+            <button id="P_btn">p</button>
         </div>
         <br>
     </div>
     <div id="RUS_KB" style="display: none;">
         <div class="btn-group">
-            <button id="Й_btn">Й</button>
-            <button id="Ц_btn">Ц</button>
-            <button id="У_btn">У</button>
-            <button id="К_btn">К</button>
-        </div>
-        <div class="btn-group">
-            <button id="Е_btn">Е</button>
-            <button id="Н_btn">Н</button>
-            <button id="Г_btn">Г</button>
-        </div>
-        <div class="btn-group">
-            <button id="Ш_btn">Ш</button>
-            <button id="Щ_btn">Щ</button>
-            <button id="З_btn">З</button>
-            <button id="Х_btn">Х</button>
+            <button id="Й_btn">й</button>
+            <button id="Ц_btn">ц</button>
+            <button id="У_btn">у</button>
+            <button id="К_btn">к</button>
+            <button id="Е_btn">е</button>
+            <button id="Н_btn">н</button>
+            <button id="Г_btn">г</button>
+            <button id="Ш_btn">ш</button>
+            <button id="Щ_btn">щ</button>
+            <button id="З_btn">з</button>
+            <button id="Х_btn">х</button>
+            <button id="Ъ_btn">ъ</button>
         </div>
         <br>
         <div class="btn-group">
-            <button id="Ф_btn">Ф</button>
-            <button id="Ы_btn">Ы</button>
-            <button id="В_btn">В</button>
-            <button id="А_btn">А</button>
-        </div>
-        <div class="btn-group">
-            <button id="П_btn">П</button>
-            <button id="Р_btn">Р</button>
-            <button id="О_btn">О</button>
-        </div>
-        <div class="btn-group">
-            <button id="Л_btn">Л</button>
-            <button id="Д_btn">Д</button>
-            <button id="Ж_btn">Ж</button>
-            <button id="Э_btn">Э</button>
+            <button id="Ф_btn">ф</button>
+            <button id="Ы_btn">ы</button>
+            <button id="В_btn">в</button>
+            <button id="А_btn">а</button>
+            <button id="П_btn">п</button>
+            <button id="Р_btn">р</button>
+            <button id="О_btn">о</button>
+            <button id="Л_btn">л</button>
+            <button id="Д_btn">д</button>
+            <button id="Ж_btn">ж</button>
+            <button id="Э_btn">э</button>
         </div>
         <br>
         <div class="btn-group">
-            <button id="Я_btn">Я</button>
-            <button id="Ч_btn">Ч</button>
-            <button id="С_btn">С</button>
-            <button id="М_btn">М</button>
-        </div>
-        <div class="btn-group">
-            <button id="И_btn">И</button>
-            <button id="Т_btn">Т</button>
-            <button id="Ь_btn">Ь</button>
-        </div>
-        <div class="btn-group">
-            <button id="Б_btn">Б</button>
-            <button id="Ю_btn">Ю</button>
-            <button id="Ё_btn">Ё</button>
-            <button id="Ъ_btn">Ъ</button>
+            <button id="Я_btn">я</button>
+            <button id="Ч_btn">ч</button>
+            <button id="С_btn">с</button>
+            <button id="М_btn">м</button>
+            <button id="И_btn">и</button>
+            <button id="Т_btn">т</button>
+            <button id="Ь_btn">ь</button>
+            <button id="Б_btn">б</button>
+            <button id="Ю_btn">ю</button>
+            <button id="Ё_btn">ё</button>
         </div>
         <br>
+    </div>
+    <div>
         <div class="btn-group">
-            <button id="Shift2_btn" style="width: 240px;">Shift</button>
-            <button id="Space2_btn" style="width: 410px;">&nbsp;</button>
-            <button id="Caps2_btn" style="width: 240px;">Caps</button>
+            <button id="Caps_btn" style="width: 160px;">⇧</button>
+            <button id="Space_btn" style="width: 320px;">&emsp;</button>
+            <button id="Delete_btn" style="width: 160px;">⇦</button>
         </div>
         <br>
     </div>
