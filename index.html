@@ -24,199 +24,272 @@ Author: Alexander Cherkashin
 
             //shows English keyboard when language switch inactive and Russian keyboard when active
             $("#lang-switch").click(function () {
+                document.getElementById('text').focus();
                 if (this.checked) {
                     $("#ENG_KB").hide();
                     $("#RUS_KB").show();
+                    document.getElementById('Copy_btn').innerHTML = "Копировать";
+                    document.getElementById('Clear_btn').innerHTML = "Удалить";
+                    document.getElementById('label-web').innerHTML = "Интернет&ensp;";
+                    document.getElementById('label-images').innerHTML = "Картинки&ensp;";
+                    document.getElementById('label-videos').innerHTML = "Видео&emsp;&emsp;";
+                    document.getElementById('title').innerHTML = "Bиртуальная Kлавиатура и Поиск";
                 }
                 else {
                     $("#RUS_KB").hide();
                     $("#ENG_KB").show();
+                    document.getElementById('Copy_btn').innerHTML = "Copy";
+                    document.getElementById('Clear_btn').innerHTML = "Clear All";
+                    document.getElementById('label-web').innerHTML = "Web&ensp;&ensp;";
+                    document.getElementById('label-images').innerHTML = "Images&ensp;&nbsp";
+                    document.getElementById('label-videos').innerHTML = "Videos&ensp;";
+                    document.getElementById('title').innerHTML = "Virtual Keyboard Search";
                 }
             });
 
             /*-- English Keyboard Key Events --*/
             $("#A_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#B_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#C_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#D_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#E_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#F_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#G_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#H_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#I_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#J_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#K_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#L_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#M_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#N_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#O_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#P_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Q_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#R_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#S_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#T_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#U_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#V_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#W_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#X_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Y_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Z_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
 
             /*-- Russian Keyboard Key Events --*/
             $("#А_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Б_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#В_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Г_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Д_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Е_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ё_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ж_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#З_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#И_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Й_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#К_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Л_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#М_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Н_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#О_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#П_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Р_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#С_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Т_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#У_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ф_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Х_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ц_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ч_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ш_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Щ_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ъ_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ы_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ь_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Э_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Ю_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
             $("#Я_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
             });
 
             /*-- Misc Keyboard Key Events --*/
             $("#Caps_btn").click(function () {
+                document.getElementById('text').focus();
                 if (capitalization) {
                     capitalization = false;
                     Uncapitalize();
@@ -228,10 +301,112 @@ Author: Alexander Cherkashin
             });
             $("#Space_btn").click(function () {
                 document.getElementById('text').value += " ";
+                document.getElementById('text').focus();
             });
             $("#Delete_btn").click(function () {
                 var string = document.getElementById('text').value.slice(0,-1);
                 document.getElementById('text').value = string;
+                document.getElementById('text').focus();
+            });
+            $("#Copy_btn").click(function () {
+                //copy contents of text box
+                document.getElementById('text').select();
+                document.execCommand("copy");
+            });
+            $("#Clear_btn").click(function () {
+                //reset the text box
+                document.getElementById('text').value = "";
+                document.getElementById('text').focus();
+            });
+
+            /*-- Search Buttons Events --*/
+            $("#Google_btn").click(function () {
+                document.getElementById('text').focus();
+                //if string is empty do not search
+                if (document.getElementById('text').value === "") {
+                    return;
+                }
+                //search Google for web results of input when 'Web' box checked
+                else if (document.getElementById('check-web').checked) {
+                    var query = "https://www.google.com/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    window.open(query);
+                }
+                //search Google for image results of input when 'Images' box checked
+                else if (document.getElementById('check-images').checked) {
+                    var query = "https://www.google.com/search?q=" + document.getElementById('text').value.replace(" ", "+") + "&source=lnms&tbm=isch";
+                    window.open(query);
+                }
+                //search Google for video results of input when 'Videos' box checked
+                else {
+                    var query = "https://www.google.com/search?q=" + document.getElementById('text').value.replace(" ", "+") + "&source=lnms&tbm=vid";
+                    window.open(query);
+                }
+            });
+            $("#Bing_btn").click(function () {
+                document.getElementById('text').focus();
+                //if string is empty do not search
+                if (document.getElementById('text').value === "") {
+                    return;
+                }
+                //search Bing for web results of input when 'Web' box checked
+                else if (document.getElementById('check-web').checked) {
+                    var query = "https://www.bing.com/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    window.open(query);
+                }
+                //search Bing for image results of input when 'Images' box checked
+                else if (document.getElementById('check-images').checked) {
+                    var query = "https://www.bing.com/images/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    window.open(query);
+                }
+                //search Bing for video results of input when 'Videos' box checked
+                else {
+                    var query = "https://www.bing.com/videos/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    window.open(query);
+                }
+            });
+            $("#DuckDuckGo_btn").click(function () {
+                document.getElementById('text').focus();
+                //if string is empty do not search
+                if (document.getElementById('text').value === "") {
+                    return;
+                }
+                //search DuckDuckGo for web results of input when 'Web' box checked
+                else if (document.getElementById('check-web').checked) {
+                    var query = "https://duckduckgo.com/?q=" + document.getElementById('text').value.replace(" ", "+") + "&ia=web";
+                    window.open(query);
+                }
+                //search DuckDuckGo for image results of input when 'Images' box checked
+                else if (document.getElementById('check-images').checked) {
+                    var query = "https://duckduckgo.com/?q=" + document.getElementById('text').value.replace(" ", "+") + "&ia=images&iax=images";
+                    window.open(query);
+                }
+                //search DuckDuckGo for video results of input when 'Videos' box checked
+                else {
+                    var query = "https://duckduckgo.com/?q=" + document.getElementById('text').value.replace(" ", "+") + "&ia=videos&iax=videos";
+                    window.open(query);
+                }
+            });
+            $("#Mail_btn").click(function () {
+                document.getElementById('text').focus();
+                //if string is empty do not search
+                if (document.getElementById('text').value === "") {
+                    return;
+                }
+                //search Mail.ru for web results of input when 'Web' box checked
+                else if (document.getElementById('check-web').checked) {
+                    var query = "https://go.mail.ru/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    window.open(query);
+                }
+                //search Mail.ru for image results of input when 'Images' box checked
+                else if (document.getElementById('check-images').checked) {
+                    var query = "https://go.mail.ru/search_images?q=" + document.getElementById('text').value.replace(" ", "+");
+                    window.open(query);
+                }
+                //search Mail.ru for video results of input when 'Videos' box checked
+                else {
+                    var query = "https://go.mail.ru/search_video?q=" + document.getElementById('text').value.replace(" ", "+");
+                    window.open(query);
+                }
             });
         })
 
@@ -371,16 +546,19 @@ Author: Alexander Cherkashin
     </script>
 </head>
 <body>
-    <h1>Virtual Keyboard Search</h1>
+    <h1 id="title">Virtual Keyboard Search</h1>
     <div>
         <form>
-            <label class="radio-inline"><input type="radio" name="optradio" id="check-web" checked>&nbsp;Web&emsp;</label>
-            <label class="radio-inline"><input type="radio" name="optradio" id="check-images">&nbsp;Images&emsp;</label>
-            <label class="radio-inline"><input type="radio" name="optradio" id="check-videos">&nbsp;Videos&emsp;</label>
+            <label class="radio-inline"><input type="radio" name="optradio" id="check-web" checked></label>
+            <label id="label-web">Web&ensp;&ensp;</label>
+            <label class="radio-inline"><input type="radio" name="optradio" id="check-images"></label>
+            <label id="label-images">Images&ensp;&nbsp</label>
+            <label class="radio-inline"><input type="radio" name="optradio" id="check-videos"></label>
+            <label id="label-videos">Videos&ensp;</label>
         </form>
-        <form class="form-inline text-center">
+        <form class="form-inline text-center" onsubmit="event.preventDefault();">
             <div class="col-md-3"></div>
-            <input type="text" class="form-control col-md-6" id="text">
+            <input type="text" class="form-control col-md-6" id="text" autofocus>
         </form>
         <br>
     </div>
@@ -389,7 +567,6 @@ Author: Alexander Cherkashin
         <button type="button" class="btn" id="Bing_btn" style="background-color: #0c6; font-weight: bold; box-shadow: none; width: 140px;">Bing</button>
         <button type="button" class="btn" id="DuckDuckGo_btn" style="background-color: #f71; font-weight: bold; box-shadow: none; width: 140px;">DuckDuckGo</button>
         <button type="button" class="btn" id="Mail_btn" style="background-color: #46f; font-weight: bold; box-shadow: none; width: 140px;">Mail.ru</button>
-        <button type="button" class="btn" id="Copy_btn" style="background-color: #bbb; font-weight: bold; box-shadow: none; width: 140px;">Copy</button>
         <br>
         <br>
     </div>
@@ -478,9 +655,14 @@ Author: Alexander Cherkashin
         <div class="btn-group">
             <button id="Caps_btn" style="width: 160px;">⇧</button>
             <button id="Space_btn" style="width: 320px;">&emsp;</button>
-            <button id="Delete_btn" style="width: 160px;">⇦</button>
+            <button id="Delete_btn" style="width: 160px;">←</button>
         </div>
         <br>
+    </div>
+    <div>
+        <br>
+        <button type="button" class="btn" id="Copy_btn" style="background-color: #bbb; font-weight: bold; box-shadow: none; width: 140px;">Copy</button>
+        <button type="button" class="btn" id="Clear_btn" style="background-color: #777; font-weight: bold; box-shadow: none; width: 140px;">Clear All</button>
     </div>
     <br>
     <div class="custom-control custom-switch">
