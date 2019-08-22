@@ -47,6 +47,48 @@ Author: Alexander Cherkashin
                 }
             });
 
+            /*-- Number Keyboard Key Events --*/
+            $("#1_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+            $("#2_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+            $("#3_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+            $("#4_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+            $("#5_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+            $("#6_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+            $("#7_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+            $("#8_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+            $("#9_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+            $("#0_btn").click(function () {
+                document.getElementById('text').value += this.innerHTML;
+                document.getElementById('text').focus();
+            });
+
             /*-- English Keyboard Key Events --*/
             $("#A_btn").click(function () {
                 document.getElementById('text').value += this.innerHTML;
@@ -328,17 +370,17 @@ Author: Alexander Cherkashin
                 }
                 //search Google for web results of input when 'Web' box checked
                 else if (document.getElementById('check-web').checked) {
-                    var query = "https://www.google.com/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    var query = "https://www.google.com/search?q=" + document.getElementById('text').value.replace(/ /g, "+");
                     window.open(query);
                 }
                 //search Google for image results of input when 'Images' box checked
                 else if (document.getElementById('check-images').checked) {
-                    var query = "https://www.google.com/search?q=" + document.getElementById('text').value.replace(" ", "+") + "&source=lnms&tbm=isch";
+                    var query = "https://www.google.com/search?q=" + document.getElementById('text').value.replace(/ /g, "+") + "&source=lnms&tbm=isch";
                     window.open(query);
                 }
                 //search Google for video results of input when 'Videos' box checked
                 else {
-                    var query = "https://www.google.com/search?q=" + document.getElementById('text').value.replace(" ", "+") + "&source=lnms&tbm=vid";
+                    var query = "https://www.google.com/search?q=" + document.getElementById('text').value.replace(/ /g, "+") + "&source=lnms&tbm=vid";
                     window.open(query);
                 }
             });
@@ -350,17 +392,17 @@ Author: Alexander Cherkashin
                 }
                 //search Bing for web results of input when 'Web' box checked
                 else if (document.getElementById('check-web').checked) {
-                    var query = "https://www.bing.com/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    var query = "https://www.bing.com/search?q=" + document.getElementById('text').value.replace(/ /g, "+");
                     window.open(query);
                 }
                 //search Bing for image results of input when 'Images' box checked
                 else if (document.getElementById('check-images').checked) {
-                    var query = "https://www.bing.com/images/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    var query = "https://www.bing.com/images/search?q=" + document.getElementById('text').value.replace(/ /g, "+");
                     window.open(query);
                 }
                 //search Bing for video results of input when 'Videos' box checked
                 else {
-                    var query = "https://www.bing.com/videos/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    var query = "https://www.bing.com/videos/search?q=" + document.getElementById('text').value.replace(/ /g, "+");
                     window.open(query);
                 }
             });
@@ -372,17 +414,17 @@ Author: Alexander Cherkashin
                 }
                 //search DuckDuckGo for web results of input when 'Web' box checked
                 else if (document.getElementById('check-web').checked) {
-                    var query = "https://duckduckgo.com/?q=" + document.getElementById('text').value.replace(" ", "+") + "&ia=web";
+                    var query = "https://duckduckgo.com/?q=" + document.getElementById('text').value.replace(/ /g, "+") + "&ia=web";
                     window.open(query);
                 }
                 //search DuckDuckGo for image results of input when 'Images' box checked
                 else if (document.getElementById('check-images').checked) {
-                    var query = "https://duckduckgo.com/?q=" + document.getElementById('text').value.replace(" ", "+") + "&ia=images&iax=images";
+                    var query = "https://duckduckgo.com/?q=" + document.getElementById('text').value.replace(/ /g, "+") + "&ia=images&iax=images";
                     window.open(query);
                 }
                 //search DuckDuckGo for video results of input when 'Videos' box checked
                 else {
-                    var query = "https://duckduckgo.com/?q=" + document.getElementById('text').value.replace(" ", "+") + "&ia=videos&iax=videos";
+                    var query = "https://duckduckgo.com/?q=" + document.getElementById('text').value.replace(/ /g, "+") + "&ia=videos&iax=videos";
                     window.open(query);
                 }
             });
@@ -394,17 +436,17 @@ Author: Alexander Cherkashin
                 }
                 //search Mail.ru for web results of input when 'Web' box checked
                 else if (document.getElementById('check-web').checked) {
-                    var query = "https://go.mail.ru/search?q=" + document.getElementById('text').value.replace(" ", "+");
+                    var query = "https://go.mail.ru/search?q=" + document.getElementById('text').value.replace(/ /g, "+");
                     window.open(query);
                 }
                 //search Mail.ru for image results of input when 'Images' box checked
                 else if (document.getElementById('check-images').checked) {
-                    var query = "https://go.mail.ru/search_images?q=" + document.getElementById('text').value.replace(" ", "+");
+                    var query = "https://go.mail.ru/search_images?q=" + document.getElementById('text').value.replace(/ /g, "+");
                     window.open(query);
                 }
                 //search Mail.ru for video results of input when 'Videos' box checked
                 else {
-                    var query = "https://go.mail.ru/search_video?q=" + document.getElementById('text').value.replace(" ", "+");
+                    var query = "https://go.mail.ru/search_video?q=" + document.getElementById('text').value.replace(/ /g, "+");
                     window.open(query);
                 }
             });
@@ -568,6 +610,21 @@ Author: Alexander Cherkashin
         <button type="button" class="btn" id="DuckDuckGo_btn" style="background-color: #f71; font-weight: bold; box-shadow: none; width: 140px;">DuckDuckGo</button>
         <button type="button" class="btn" id="Mail_btn" style="background-color: #46f; font-weight: bold; box-shadow: none; width: 140px;">Mail.ru</button>
         <br>
+        <br>
+    </div>
+    <div>
+        <div class="btn-group">
+            <button id="1_btn">1</button>
+            <button id="2_btn">2</button>
+            <button id="3_btn">3</button>
+            <button id="4_btn">4</button>
+            <button id="5_btn">5</button>
+            <button id="6_btn">6</button>
+            <button id="7_btn">7</button>
+            <button id="8_btn">8</button>
+            <button id="9_btn">9</button>
+            <button id="0_btn">0</button>
+        </div>
         <br>
     </div>
     <div id="ENG_KB">
